@@ -21,12 +21,10 @@ node{
     git 'https://github.com/jilu407/test-maven.git' 
   }
   stage('install'){
-   #sh 'mvn install'
    echo 'install'
    }
    stage('package'){
-    #sh 'mvn package'
-	echo 'package'
+    echo 'package'
    }
   
 }
