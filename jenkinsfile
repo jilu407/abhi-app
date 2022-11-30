@@ -18,7 +18,7 @@ pipeline {
 */
 node{
   stage('scm'){
-    git 'https://github.com/jilu407/test-maven.git' 
+    git 'https://github.com/jilu407/abhi-app.git' 
   }
   stage('install'){
    sh 'npm install'
