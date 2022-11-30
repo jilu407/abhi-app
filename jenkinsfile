@@ -21,10 +21,10 @@ node{
     git 'https://github.com/jilu407/test-maven.git' 
   }
   stage('install'){
-   echo 'install'
+   sh 'npm install'
    }
    stage('package'){
-    echo 'package'
+    sh 'npm run build --prod'
    }
   
 }
