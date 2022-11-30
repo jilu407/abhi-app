@@ -1,3 +1,4 @@
+/*
 pipeline {
     agent any
 
@@ -13,4 +14,19 @@ pipeline {
             }
         }
     }
+}
+*/
+node{
+  stage('scm'){
+    git 'https://github.com/jilu407/test-maven.git' 
+  }
+  stage('install'){
+   #sh 'mvn install'
+   echo 'install'
+   }
+   stage('package'){
+    #sh 'mvn package'
+	echo 'package'
+   }
+  
 }
